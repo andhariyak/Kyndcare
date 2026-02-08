@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Navigation */
+.navbar {
+    background: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2563eb; /* Blue accent color */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+/* Hero Section */
+.hero {
+    background: #f4f4f5;
+    height: 80vh; /* 80% of the screen height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+/* Buttons */
+.btn {
+    background: #2563eb;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+/* Sections */
+.section {
+    padding: 60px 0;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+.bg-light {
+    background: #f9fafb;
+}
+
+/* Grid for Projects */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background: #1f2937;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer p {
+    color: #9ca3af;
+    margin-bottom: 20px;
+}
+
+.btn-outline {
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.btn-outline:hover {
+    background: #fff;
+    color: #1f2937;
+}
