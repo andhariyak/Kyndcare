@@ -148,3 +148,18 @@ a {
     background: #fff;
     color: #1f2937;
 }
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center; /* Vertically centers the image with the text */
+    gap: 10px; /* Adds space between the image and the text */
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo-img {
+    height: 40px; /* Adjust height to fit your navbar */
+    width: auto;  /* Maintains aspect ratio */
+}
