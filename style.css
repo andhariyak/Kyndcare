@@ -163,3 +163,74 @@ a {
     height: 40px; /* Adjust height to fit your navbar */
     width: auto;  /* Maintains aspect ratio */
 }
+
+/* Highlight the current page link */
+.nav-links a.active {
+    color: #2563eb;
+    font-weight: bold;
+    border-bottom: 2px solid #2563eb;
+}
+
+/* About Page Styles */
+.lead-text {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.profile-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.text-block h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.skills-list {
+    list-style: disc inside;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* project Page Styles */
+.project-box {
+    background: #f9fafb;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    display: inline-block;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.project-box p {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Mobile Responsiveness for About Page */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stack image on top of text on mobile */
+        align-items: center;
+    }
+    
+    .profile-img {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+}
