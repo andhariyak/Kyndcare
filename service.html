@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kynd Care Services - AMC and on-call repair inquiry for Lift, AC, RO and Washing Machine.">
+    <title>Service Inquiry | Kynd Care Services</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Kynd Care Services home">
+                <img src="logo.png" alt="Kynd Care Services logo" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Services</a></li>
+                <li><a href="service.html" class="active">Service Inquiry</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="service-hero">
+            <div class="container">
+                <span class="eyebrow">Kynd Care Services</span>
+                <h1>AMC &amp; On-Call Repair Inquiry</h1>
+                <p>Tell us what equipment you need service for. We will review your request and get back to you.</p>
+            </div>
+        </section>
+
+        <section class="section inquiry-section">
+            <div class="container inquiry-layout">
+                <div class="service-list">
+                    <h2>Services</h2>
+                    <p class="lead-text">Choose the service that matches your requirement.</p>
+                    <div class="service-option-list">
+                        <div class="service-option"><strong>Lift</strong><span>AMC &amp; on-call repair</span></div>
+                        <div class="service-option"><strong>AC</strong><span>AMC &amp; on-call repair</span></div>
+                        <div class="service-option"><strong>RO</strong><span>AMC &amp; on-call repair</span></div>
+                        <div class="service-option"><strong>Washing Machine</strong><span>AMC &amp; on-call repair</span></div>
+                    </div>
+                    <div class="info-box">
+                        <strong>How it works</strong>
+                        <p>Submit the form with your contact details and service requirement. Your email app will open with the inquiry ready to send.</p>
+                    </div>
+                </div>
+
+                <form class="inquiry-form" id="serviceInquiryForm">
+                    <h2>Request a Service</h2>
+                    <div class="form-grid">
+                        <label>
+                            Name <span>*</span>
+                            <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name">
+                        </label>
+                        <label>
+                            Phone <span>*</span>
+                            <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="Your phone number">
+                        </label>
+                        <label>
+                            Service <span>*</span>
+                            <select id="service" name="service" required>
+                                <option value="">Select service</option>
+                                <option>Lift</option>
+                                <option>AC</option>
+                                <option>RO</option>
+                                <option>Washing Machine</option>
+                            </select>
+                        </label>
+                        <label>
+                            Request Type <span>*</span>
+                            <select id="requestType" name="requestType" required>
+                                <option value="">Select request</option>
+                                <option>AMC Service</option>
+                                <option>On-Call Repair</option>
+                            </select>
+                        </label>
+                        <label class="full-width">
+                            Location
+                            <input type="text" id="location" name="location" autocomplete="street-address" placeholder="Area / city">
+                        </label>
+                        <label class="full-width">
+                            Problem / Requirement <span>*</span>
+                            <textarea id="message" name="message" required rows="5" placeholder="Describe the problem or AMC requirement"></textarea>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn form-submit">Send Inquiry</button>
+                    <p class="form-note">The inquiry will be prepared for <strong>ketan@kyndcare.in</strong>.</p>
+                    <p class="form-status" id="formStatus" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>For service inquiries, use the form above or email us directly.</p>
+            <a href="mailto:ketan@kyndcare.in" class="btn-outline">Email Us</a>
+            <div class="socials"><p>&copy; 2026 Kynd Care Services</p></div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('serviceInquiryForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const service = document.getElementById('service').value;
+            const requestType = document.getElementById('requestType').value;
+            const location = document.getElementById('location').value.trim() || 'Not provided';
+            const message = document.getElementById('message').value.trim();
+            const status = document.getElementById('formStatus');
+
+            const subject = `${requestType} Inquiry - ${service}`;
+            const body = [
+                'Kynd Care Services - Service Inquiry',
+                '',
+                `Name: ${name}`,
+                `Phone: ${phone}`,
+                `Service: ${service}`,
+                `Request Type: ${requestType}`,
+                `Location: ${location}`,
+                '',
+                'Problem / Requirement:',
+                message
+            ].join('\n');
+
+            status.textContent = 'Opening your email app...';
+            window.location.href = `mailto:ketan@kyndcare.in?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        });
+    </script>
+</body>
+</html>
