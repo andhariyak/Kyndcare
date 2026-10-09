@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers | Kynd Care Services</title>
+    <meta name="description" content="Join Kynd Care Services - careers for technicians and service staff for Lift, AC, RO, Washing Machine, Laptop / PC and Solar Panel.">
+    <meta name="theme-color" content="#0f766e">
+
+    <link rel="icon" type="image/png" href="favicon-256.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=8">
+</head>
+<body>
+
+    <nav class="navbar" aria-label="Main">
+        <div class="container">
+            <a href="index.html" class="logo" aria-label="Kynd Care Services home">
+                <img src="logo-dark.png" alt="Kynd Care" class="logo-img">
+            </a>
+            <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Services</a></li>
+                <li><a href="service.html">Service Inquiry</a></li>
+                <li><a href="careers.html" class="active" aria-current="page">Careers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <header class="page-header">
+            <div class="container">
+                <h1>Careers at Kynd Care</h1>
+                <p>Build a career in service with a team that values care, skill and commitment.</p>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="container">
+                <div class="split">
+                    <div class="text-block">
+                        <h2>Grow with us</h2>
+                        <p>We are always looking for dependable people to join our AMC and on-call repair teams. If you enjoy solving problems and helping customers, we would like to hear from you.</p>
+                    </div>
+                    <img src="images/team.svg" alt="Kynd Care service team" class="photo">
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Roles we hire for</h2>
+                    <p>Send your details for any of these, or tell us about your skills.</p>
+                </div>
+                <div class="grid">
+                    <article class="card"><h3>Lift Technician</h3><p>Installation, maintenance and breakdown support.</p></article>
+                    <article class="card"><h3>AC Technician</h3><p>Servicing, gas charging and repair.</p></article>
+                    <article class="card"><h3>RO Service Technician</h3><p>Filter changes, servicing and repair.</p></article>
+                    <article class="card"><h3>Washing Machine Technician</h3><p>Diagnosis and repair of home appliances.</p></article>
+                    <article class="card"><h3>Laptop / PC Technician</h3><p>Hardware and software troubleshooting and repair.</p></article>
+                    <article class="card"><h3>Solar Panel Technician</h3><p>Inspection, fault finding and repair of solar systems.</p></article>
+                    <article class="card"><h3>Customer Support Executive</h3><p>Handle inquiries and schedule service visits.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Apply Now</h2>
+                    <p>Fill in the form and we will contact you if there is a suitable opening.</p>
+                </div>
+                <form class="inquiry-form career-form" id="careerForm">
+                    <div class="form-grid">
+                        <label><span class="label-text">Name <span>*</span></span>
+                            <input type="text" id="cName" required autocomplete="name" placeholder="Your name"></label>
+                        <label><span class="label-text">Phone <span>*</span></span>
+                            <input type="tel" id="cPhone" required inputmode="tel" maxlength="17" placeholder="10-digit mobile number"></label>
+                        <label><span class="label-text">Role <span>*</span></span>
+                            <select id="cRole" required>
+                                <option value="">Select role</option>
+                                <option>Lift Technician</option>
+                                <option>AC Technician</option>
+                                <option>RO Service Technician</option>
+                                <option>Washing Machine Technician</option>
+                                <option>Laptop / PC Technician</option>
+                                <option>Solar Panel Technician</option>
+                                <option>Customer Support Executive</option>
+                                <option>Other</option>
+                            </select></label>
+                        <label><span class="label-text">Experience</span>
+                            <input type="text" id="cExp" placeholder="e.g. 3 years"></label>
+                        <label class="full-width"><span class="label-text">About you</span>
+                            <textarea id="cMsg" rows="4" placeholder="Skills, certifications, location"></textarea></label>
+                    </div>
+                    <input type="text" name="_gotcha" id="cGotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+                    <button type="submit" class="btn form-submit" id="cSubmit">Submit Application</button>
+                    <p class="form-status" id="cStatus" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="footer-lead">Questions about working with us? Write to us.</p>
+            <a href="mailto:ketan@kyndcare.in" class="btn-outline">Email Us</a>
+            <div class="footer-bottom">
+                <img src="logo-light.png" alt="Kynd Care" class="footer-logo">
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Services</a></li>
+                    <li><a href="service.html">Service Inquiry</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="mailto:ketan@kyndcare.in">ketan@kyndcare.in</a></li>
+                </ul>
+                <p>&copy; 2026 Kynd Care Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js?v=8"></script>
+    <script>
+        const FORM_ENDPOINT = 'https://formspree.io/f/xbgdrwny';
+        const careerForm = document.getElementById('careerForm');
+        const cStatus = document.getElementById('cStatus');
+        const cSubmit = document.getElementById('cSubmit');
+
+        function normalizePhone(raw) {
+            let d = raw.replace(/[\s\-().]/g, '');
+            if (d.startsWith('+')) d = d.slice(1);
+            if (d.length === 12 && d.startsWith('91')) d = d.slice(2);
+            else if (d.length === 11 && d.startsWith('0')) d = d.slice(1);
+            return /^[6-9]\d{9}$/.test(d) ? d : null;
+        }
+
+        careerForm.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const phone = normalizePhone(document.getElementById('cPhone').value);
+            cStatus.classList.remove('error');
+            if (!phone) {
+                cStatus.textContent = 'Please enter a valid 10-digit mobile number.';
+                cStatus.classList.add('error');
+                return;
+            }
+            const role = document.getElementById('cRole').value;
+            cSubmit.disabled = true;
+            cSubmit.textContent = 'Sending...';
+            try {
+                const payload = new FormData();
+                payload.append('_subject', 'Career Application - ' + role);
+                payload.append('_gotcha', document.getElementById('cGotcha').value);
+                payload.append('formType', 'Career application');
+                payload.append('name', document.getElementById('cName').value.trim());
+                payload.append('phone', '+91' + phone);
+                payload.append('role', role);
+                payload.append('experience', document.getElementById('cExp').value.trim() || 'Not provided');
+                payload.append('message', document.getElementById('cMsg').value.trim() || 'Not provided');
+                const res = await fetch(FORM_ENDPOINT, {
+                    method: 'POST',
+                    headers: { 'Accept': 'application/json' },
+                    body: payload
+                });
+                if (!res.ok) throw new Error('failed');
+                careerForm.reset();
+                cStatus.textContent = 'Thank you! Your application has been received.';
+            } catch (err) {
+                cStatus.textContent = 'Sorry, something went wrong. Please email ketan@kyndcare.in.';
+                cStatus.classList.add('error');
+            } finally {
+                cSubmit.disabled = false;
+                cSubmit.textContent = 'Submit Application';
+            }
+        });
+    </script>
+</body>
+</html>
