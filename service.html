@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Inquiry | Kynd Care Services</title>
+    <meta name="description" content="Kynd Care Services — AMC and on-call repair inquiry for Lift, AC, RO, Washing Machine, Laptop / PC and Solar Panel.">
+    <meta name="theme-color" content="#f3efe7">
+
+    <link rel="icon" type="image/png" href="favicon-256.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&amp;family=Outfit:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=11">
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="#main" class="skip-link">Skip to content</a>
+        <div class="wrap header-bar">
+            <a href="index.html" class="logo" aria-label="Kynd Care Services home">
+                <img src="logo-dark.png" alt="Kynd Care" width="900" height="218" class="logo-img">
+            </a>
+
+            <nav class="desktop-nav" aria-label="Main">
+                <a href="index.html">Home</a><a href="about.html">About</a><a href="project.html">Services</a><a href="service.html" class="active" aria-current="page">Service Inquiry</a><a href="careers.html">Careers</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="service.html" class="btn header-cta">Request a service</a>
+                <button type="button" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-menu">
+                    <svg class="icon-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg><svg class="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="site-menu" class="mobile-menu" hidden>
+            <nav aria-label="Mobile">
+                <a href="index.html">Home</a><a href="about.html">About</a><a href="project.html">Services</a><a href="service.html" class="active" aria-current="page">Service Inquiry</a><a href="careers.html">Careers</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a href="service.html" class="btn btn-lg">Request a service</a>
+        </div>
+    </header>
+
+    <main id="main">
+        <header class="wrap page-intro">
+            <p class="kicker">Service inquiry</p>
+            <h1 class="display">AMC &amp; On-Call Repair Inquiry</h1>
+            <p class="lede">Tell us what equipment you need service for. We will review your request and get back to you.</p>
+        </header>
+
+        <section class="wrap inquiry-layout">
+            <div class="pick">
+                <h2>Services</h2>
+                <p class="hint">Choose the service that matches your requirement.</p>
+                <div class="pick-list">
+                        <button type="button" class="pick-item" data-service="Lift" aria-pressed="false"><span><strong>Lift</strong><span>AMC &amp; on-call</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 16-4 4-4-4"/><path d="M17 20V4"/><path d="m3 8 4-4 4 4"/><path d="M7 4v16"/></svg></button>
+                        <button type="button" class="pick-item" data-service="AC" aria-pressed="false"><span><strong>Air Conditioner</strong><span>AMC &amp; on-call</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="8" rx="2"/><path d="M7 16v2M12 16v4M17 16v2"/></svg></button>
+                        <button type="button" class="pick-item" data-service="RO" aria-pressed="false"><span><strong>RO Water Purifier</strong><span>AMC &amp; on-call</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></svg></button>
+                        <button type="button" class="pick-item" data-service="Washing Machine" aria-pressed="false"><span><strong>Washing Machine</strong><span>On-call only</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><circle cx="12" cy="14" r="5"/><path d="M8 6h.01M12 6h4"/></svg></button>
+                        <button type="button" class="pick-item" data-service="Laptop / PC" aria-pressed="false"><span><strong>Laptop / PC</strong><span>On-call only</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"/></svg></button>
+                        <button type="button" class="pick-item" data-service="Solar Panel" aria-pressed="false"><span><strong>Solar Panel</strong><span>On-call only</span></span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2m-7.07-17.07 1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg></button>
+                </div>
+                <p class="how"><strong>How it works</strong>Submit the form with your contact details and service requirement. We will review your request and get back to you.</p>
+            </div>
+
+            <form class="card-form" id="serviceInquiryForm">
+                <h2>Request a Service</h2>
+                <div class="form-grid">
+                    <label class="field-group"><span>Name <span class="req">*</span></span>
+                        <input class="field" type="text" id="name" name="name" required autocomplete="name" placeholder="Your name"></label>
+                    <label class="field-group"><span>Phone <span class="req">*</span></span>
+                        <input class="field" type="tel" id="phone" name="phone" required autocomplete="tel" inputmode="tel" maxlength="17" placeholder="10-digit mobile number" aria-describedby="phoneError">
+                        <span class="field-error" id="phoneError" role="alert"></span></label>
+                    <label class="field-group"><span>Service <span class="req">*</span></span>
+                        <select class="field" id="service" name="service" required>
+                            <option value="">Select service</option><option value="Lift">Lift</option><option value="AC">Air Conditioner</option><option value="RO">RO Water Purifier</option><option value="Washing Machine">Washing Machine</option><option value="Laptop / PC">Laptop / PC</option><option value="Solar Panel">Solar Panel</option>
+                        </select></label>
+                    <div class="field-group">
+                        <label class="field-group"><span>Request Type <span class="req">*</span></span>
+                            <select class="field" id="requestType" name="requestType" required>
+                                <option value="">Select request</option>
+                                <option>AMC Service</option>
+                                <option>On-Call Repair</option>
+                            </select></label>
+                        <p class="note" id="onCallNote" hidden>AMC is not offered for this equipment. On-call repair only.</p>
+                    </div>
+                    <label class="field-group full"><span>Location</span>
+                        <input class="field" type="text" id="location" name="location" autocomplete="street-address" placeholder="Area / city"></label>
+                    <label class="field-group full"><span>Problem / Requirement <span class="req">*</span></span>
+                        <textarea class="field" id="message" name="message" required rows="5" placeholder="Describe the problem or AMC requirement"></textarea></label>
+                </div>
+                <div class="otp-box" id="otpBox" hidden>
+                    <label class="field-group" for="otp"><span>Verification code</span>
+                        <input class="field" type="text" id="otp" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="6-digit code" pattern="[0-9]*"></label>
+                    <p class="otp-help" id="otpHelp"></p>
+                    <div class="otp-actions">
+                        <button type="button" class="btn" id="otpVerify">Verify &amp; Send</button>
+                        <button type="button" class="link-btn" id="otpResend" disabled>Resend code</button>
+                        <button type="button" class="link-btn" id="otpChange">Change number</button>
+                    </div>
+                </div>
+                <div id="recaptcha-container"></div>
+                <input type="text" name="_gotcha" class="hp-field" tabindex="-1" autocomplete="off" aria-hidden="true">
+                <button type="submit" class="btn form-submit">Send Inquiry</button>
+                <p class="form-note">Prefer email? Write to <a href="mailto:ketan@kyndcare.in">ketan@kyndcare.in</a>.</p>
+                <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                <div class="skip-wrap"><button type="button" class="link-btn" id="skipOtp" hidden>Send without verification</button></div>
+            </form>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer">
+        <div class="wrap footer-grid">
+            <div class="c6">
+                <img src="logo-light.png" alt="Kynd Care" width="900" height="218" class="logo-img">
+                <p class="about">AMC for Lift, AC and RO, and on-call repair for Washing Machine, Laptop / PC and Solar Panel, with care and commitment.</p>
+            </div>
+            <div class="c3">
+                <p class="label">Pages</p>
+                <ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="project.html">Services</a></li><li><a href="service.html">Service Inquiry</a></li><li><a href="careers.html">Careers</a></li></ul>
+            </div>
+            <div class="c3">
+                <p class="label">Contact</p>
+                <a href="mailto:ketan@kyndcare.in" class="mail">ketan@kyndcare.in</a>
+                <div class="cta"><a href="service.html" class="btn-inverse">Service Inquiry</a></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="wrap">&copy; 2026 Kynd Care Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js?v=11"></script>
+
+    <script>
+        // ---- Settings -------------------------------------------------------------------------
+        // Form endpoint (Formspree). While empty, the form falls back to the visitor's email app.
+        const FORM_ENDPOINT = 'https://formspree.io/f/xbgdrwny';
+        const FALLBACK_EMAIL = 'ketan@kyndcare.in';
+
+        // Optional SMS verification (Firebase Phone Auth).
+        // Set SMS_VERIFICATION to true to send a 6-digit code before the inquiry is sent.
+        // This needs a billing account on the Firebase project (Blaze plan). While it is false,
+        // the form only checks the number format and then sends the inquiry.
+        const SMS_VERIFICATION = false;
+        const FIREBASE_CONFIG = {
+            apiKey: 'AIzaSyC7iDZ2lLE3CIdDDM6kGNBeAbV-82yZpBc',
+            authDomain: 'kyndcare-services.firebaseapp.com',
+            projectId: 'kyndcare-services',
+            appId: '1:609429581730:web:9ae3d535d35699bdb0ccfb'
+        };
+        const OTP_ENABLED = SMS_VERIFICATION && Boolean(FIREBASE_CONFIG.apiKey);
+        const FIREBASE_VERSION = '10.12.2';
+        const RESEND_SECONDS = 30;
+        // ---------------------------------------------------------------------------------------
+
+        const form = document.getElementById('serviceInquiryForm');
+        const status = document.getElementById('formStatus');
+        const submitBtn = form.querySelector('.form-submit');
+        const phoneInput = document.getElementById('phone');
+        const phoneError = document.getElementById('phoneError');
+        const otpBox = document.getElementById('otpBox');
+        const otpInput = document.getElementById('otp');
+        const otpHelp = document.getElementById('otpHelp');
+        const otpVerify = document.getElementById('otpVerify');
+        const otpResend = document.getElementById('otpResend');
+        const otpChange = document.getElementById('otpChange');
+        const skipOtp = document.getElementById('skipOtp');
+        let skipPhone = null;  // number to use if the visitor chooses to send without a code
+
+        // Accepts 10-digit Indian mobile numbers (starting 6-9), with or without +91 / 91 / 0
+        function normalizePhone(raw) {
+            let d = raw.replace(/[\s\-().]/g, '');
+            if (d.startsWith('+')) d = d.slice(1);
+            if (d.length === 12 && d.startsWith('91')) d = d.slice(2);
+            else if (d.length === 11 && d.startsWith('0')) d = d.slice(1);
+            return /^[6-9]\d{9}$/.test(d) ? d : null;
+        }
+
+        function showPhoneError(msg) {
+            phoneError.textContent = msg;
+            phoneInput.setAttribute('aria-invalid', msg ? 'true' : 'false');
+        }
+
+        function setStatus(text, isError) {
+            status.textContent = text;
+            status.classList.toggle('error', !!isError);
+        }
+
+        // Washing Machine, Laptop / PC and Solar Panel: on-call repair only (no AMC)
+        const ON_CALL_ONLY = ['Washing Machine', 'Laptop / PC', 'Solar Panel'];
+        const serviceSelect = document.getElementById('service');
+        const requestSelect = document.getElementById('requestType');
+        const onCallNote = document.getElementById('onCallNote');
+        const pickButtons = Array.from(document.querySelectorAll('.pick-item'));
+        function syncRequestType() {
+            const onCallOnly = ON_CALL_ONLY.includes(serviceSelect.value);
+            Array.from(requestSelect.options).forEach(function (o) {
+                if (o.text === 'AMC Service') { o.disabled = onCallOnly; o.hidden = onCallOnly; }
+            });
+            if (onCallOnly) requestSelect.value = 'On-Call Repair';
+            onCallNote.hidden = !onCallOnly;
+            pickButtons.forEach(function (b) {
+                b.setAttribute('aria-pressed', String(b.dataset.service === serviceSelect.value));
+            });
+        }
+        serviceSelect.addEventListener('change', syncRequestType);
+        form.addEventListener('reset', function () { setTimeout(syncRequestType, 0); });
+
+        // Pick a service from the list on the left
+        pickButtons.forEach(function (b) {
+            b.addEventListener('click', function () {
+                serviceSelect.value = b.dataset.service;
+                syncRequestType();
+                if (window.matchMedia('(max-width: 767px)').matches) {
+                    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                    form.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Links such as service.html?service=AC&type=On-Call%20Repair pre-fill the form
+        (function prefill() {
+            const q = new URLSearchParams(window.location.search);
+            const s = q.get('service');
+            if (s && Array.from(serviceSelect.options).some(function (o) { return o.value === s; })) serviceSelect.value = s;
+            const t = q.get('type');
+            if ((t === 'AMC Service' || t === 'On-Call Repair') && !ON_CALL_ONLY.includes(serviceSelect.value)) requestSelect.value = t;
+            syncRequestType();
+        })();
+
+        phoneInput.addEventListener('input', function () { showPhoneError(''); });
+        phoneInput.addEventListener('blur', function () {
+            if (phoneInput.value.trim() && !normalizePhone(phoneInput.value)) {
+                showPhoneError('Please enter a valid 10-digit mobile number.');
+            }
+        });
+
+        function collectData(phone, verified) {
+            return {
+                name: document.getElementById('name').value.trim(),
+                phone: '+91' + phone,
+                phoneVerified: verified ? 'Yes (SMS code)' : (OTP_ENABLED ? 'No' : 'Not requested (format checked only)'),
+                service: document.getElementById('service').value,
+                requestType: document.getElementById('requestType').value,
+                location: document.getElementById('location').value.trim() || 'Not provided',
+                message: document.getElementById('message').value.trim()
+            };
+        }
+
+        async function sendInquiry(data) {
+            const subject = `${data.requestType} Inquiry - ${data.service}`;
+
+            if (!FORM_ENDPOINT) {
+                const body = [
+                    'Kynd Care Services - Service Inquiry', '',
+                    `Name: ${data.name}`, `Phone: ${data.phone}`,
+                    `Service: ${data.service}`, `Request Type: ${data.requestType}`,
+                    `Location: ${data.location}`, '',
+                    'Problem / Requirement:', data.message
+                ].join('\n');
+                setStatus('Opening your email app...');
+                window.location.href = `mailto:${FALLBACK_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+                return;
+            }
+
+            submitBtn.disabled = true;
+            otpVerify.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            setStatus('');
+
+            try {
+                const payload = new FormData();
+                payload.append('_subject', subject);
+                payload.append('_gotcha', form.elements['_gotcha'].value);
+                Object.keys(data).forEach(function (k) { payload.append(k, data[k]); });
+                const response = await fetch(FORM_ENDPOINT, {
+                    method: 'POST',
+                    headers: { 'Accept': 'application/json' },
+                    body: payload
+                });
+                if (!response.ok) throw new Error('Request failed');
+                form.reset();
+                resetOtpUi();
+                setStatus('Thank you! Your inquiry has been sent. We will get back to you shortly.');
+            } catch (err) {
+                setStatus(`Sorry, something went wrong. Please try again or email ${FALLBACK_EMAIL}.`, true);
+            } finally {
+                submitBtn.disabled = false;
+                otpVerify.disabled = false;
+                submitBtn.textContent = 'Send Inquiry';
+            }
+        }
+
+        // ---- SMS verification -----------------------------------------------------------------
+        let fb = null;            // loaded Firebase modules
+        let auth = null;
+        let recaptcha = null;
+        let confirmation = null;  // result of signInWithPhoneNumber
+        let pendingPhone = null;  // 10-digit number the code was sent to
+        let resendTimer = null;
+
+        async function loadFirebase() {
+            if (fb) return fb;
+            const base = `https://www.gstatic.com/firebasejs/${FIREBASE_VERSION}/`;
+            const [app, authMod] = await Promise.all([
+                import(base + 'firebase-app.js'),
+                import(base + 'firebase-auth.js')
+            ]);
+            fb = { app, authMod };
+            auth = authMod.getAuth(app.initializeApp(FIREBASE_CONFIG));
+            auth.languageCode = 'en';
+            return fb;
+        }
+
+        function startResendCountdown() {
+            clearInterval(resendTimer);
+            let left = RESEND_SECONDS;
+            otpResend.disabled = true;
+            otpResend.textContent = `Resend code (${left}s)`;
+            resendTimer = setInterval(function () {
+                left -= 1;
+                if (left <= 0) {
+                    clearInterval(resendTimer);
+                    otpResend.disabled = false;
+                    otpResend.textContent = 'Resend code';
+                } else {
+                    otpResend.textContent = `Resend code (${left}s)`;
+                }
+            }, 1000);
+        }
+
+        function resetOtpUi() {
+            clearInterval(resendTimer);
+            skipOtp.hidden = true;
+            skipPhone = null;
+            otpBox.hidden = true;
+            otpInput.value = '';
+            confirmation = null;
+            pendingPhone = null;
+            phoneInput.readOnly = false;
+            submitBtn.hidden = false;
+        }
+
+        function otpErrorMessage(err) {
+            switch (err && err.code) {
+                case 'auth/invalid-phone-number': return 'That phone number is not valid.';
+                case 'auth/too-many-requests': return 'Too many attempts. Please wait a while and try again.';
+                case 'auth/quota-exceeded': return 'We cannot send codes right now. Please email us instead.';
+                case 'auth/invalid-verification-code': return 'That code is not correct. Please check and try again.';
+                case 'auth/code-expired': return 'That code has expired. Please tap Resend code.';
+                case 'auth/billing-not-enabled': return 'SMS codes are temporarily unavailable.';
+                case 'auth/operation-not-allowed': return 'SMS codes are not enabled for this country yet.';
+                case 'auth/unauthorized-domain': return 'This website address is not authorized for SMS codes.';
+                case 'auth/network-request-failed': return 'Network problem. Please check your connection and try again.';
+                default: return `Could not send the code${err && err.code ? ' (' + err.code + ')' : ''}. Please try again or email ${FALLBACK_EMAIL}.`;
+            }
+        }
+
+        async function sendOtp(phone) {
+            setStatus('Sending verification code...');
+            skipOtp.hidden = true;
+            submitBtn.disabled = true;
+            try {
+                const { authMod } = await loadFirebase();
+                if (!recaptcha) {
+                    recaptcha = new authMod.RecaptchaVerifier(auth, 'recaptcha-container', { size: 'invisible' });
+                }
+                confirmation = await authMod.signInWithPhoneNumber(auth, '+91' + phone, recaptcha);
+                pendingPhone = phone;
+                phoneInput.readOnly = true;
+                submitBtn.hidden = true;
+                otpBox.hidden = false;
+                otpInput.value = '';
+                otpHelp.textContent = `We sent a 6-digit code to +91 ${phone.slice(0, 5)} ${phone.slice(5)}.`;
+                setStatus('');
+                otpInput.focus();
+                startResendCountdown();
+            } catch (err) {
+                console.error('SMS code error:', err);
+                if (recaptcha) { try { recaptcha.clear(); } catch (e) {} recaptcha = null; }
+                // Don't block the visitor if codes can't be sent (quota, network, etc.)
+                if (err && err.code === 'auth/invalid-phone-number') {
+                    setStatus(otpErrorMessage(err), true);
+                } else {
+                    skipPhone = phone;
+                    skipOtp.hidden = false;
+                    setStatus(otpErrorMessage(err) + ' You can also send your inquiry without verification.', true);
+                }
+            } finally {
+                submitBtn.disabled = false;
+            }
+        }
+
+        skipOtp.addEventListener('click', async function () {
+            if (!skipPhone) return;
+            const phone = skipPhone;
+            skipOtp.hidden = true;
+            await sendInquiry(collectData(phone, false));
+        });
+
+        otpResend.addEventListener('click', function () { if (pendingPhone) sendOtp(pendingPhone); });
+        otpChange.addEventListener('click', function () {
+            resetOtpUi();
+            setStatus('');
+            phoneInput.focus();
+        });
+
+        otpVerify.addEventListener('click', async function () {
+            const code = otpInput.value.trim();
+            if (!/^\d{6}$/.test(code)) {
+                setStatus('Please enter the 6-digit code.', true);
+                otpInput.focus();
+                return;
+            }
+            otpVerify.disabled = true;
+            setStatus('Verifying...');
+            try {
+                await confirmation.confirm(code);
+            } catch (err) {
+                setStatus(otpErrorMessage(err), true);
+                otpVerify.disabled = false;
+                return;
+            }
+            otpVerify.disabled = false;
+            await sendInquiry(collectData(pendingPhone, true));
+        });
+
+        otpInput.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter') { e.preventDefault(); otpVerify.click(); }
+        });
+
+        // ---- Form submit ----------------------------------------------------------------------
+        form.addEventListener('submit', async function (event) {
+            event.preventDefault();
+            setStatus('');
+
+            const phone = normalizePhone(phoneInput.value);
+            if (!phone) {
+                showPhoneError('Please enter a valid 10-digit mobile number.');
+                phoneInput.focus();
+                return;
+            }
+
+            if (OTP_ENABLED) {
+                await sendOtp(phone);
+            } else {
+                await sendInquiry(collectData(phone, false));
+            }
+        });
+    </script>
+</body>
+</html>
